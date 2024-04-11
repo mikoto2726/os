@@ -1,29 +1,35 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-int main(int n){
-    char message;
-    if (5<n<10){
-        message = "おはようございます";
-        return message;
+void greet(int hour){
+
+    if (hour >= 5 && hour <= 10){
+        printf("おはようございます\n");
     }
 
-    if (11<n<17){
-        message = "こんにちは";
-        return message;
+    else if (hour >= 11 && hour <=17){
+        printf("こんにちは\n");
     }
 
-    if (18<n<20){
-        message = "こんばんは";
-        return message;
+    else if (hour >= 18 && hour <=20){
+        printf("こんばんは\n");
     }
 
-    if (0<n<4 | 21<n<23){
-        message = "おやすみなさい";
-        return message;
+    else if ((hour >= 0 && hour <= 4) || (hour >= 21 && hour <= 23)){
+        printf("おやすみなさい\n");
     }
 
     else{
-        message = "時間を指定してください";
-        return message;
+        printf("時間を指定してください\n");
     }
+}
+
+int main(int argc, char *argv[]) {
+    if (argc == 2) { // コマンドライン引数が1つ提供された場合
+        int hour = atoi(argv[1]);
+        greet(hour);
+    } else {
+        printf("時間を指定してください\n");
+    }
+    return 0;
 }
