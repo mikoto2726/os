@@ -1,0 +1,1 @@
+curl -s https://moocs-files.iniad.org/2018/OS/01/access_log | grep /robots.txt | cat -n
