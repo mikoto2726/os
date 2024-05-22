@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define BUFFER_SIZE 1024  // バッファのサイズを定義
+#define BUFFER_SIZE 8192  // バッファのサイズを定義
 
 int main(int argc, char *argv[]) {
     FILE *srcFile, *destFile;  // ファイルポインタ
