@@ -13,7 +13,10 @@ int main(int argc, char* argv[]){
 		else if (18 <= hour && hour <= 20){
 			printf("こんばんは\n");
 		}
-		else if (0 <= hour && hour <= 4 && 21 <= hour && hour <=23){
+		else if (0 <= hour && hour <= 4){
+			printf("おやすみなさい\n");
+		}
+		else if (21 <= hour && hour <=23){
 			printf("おやすみなさい\n");
 		}
 		else{
