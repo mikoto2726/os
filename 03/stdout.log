@@ -1,0 +1,27 @@
+Package: make
+Version: 4.3-4.1build1
+Priority: optional
+Build-Essential: yes
+Section: devel
+Source: make-dfsg
+Origin: Ubuntu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Manoj Srivastava <srivasta@debian.org>
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Installed-Size: 426 kB
+Depends: libc6 (>= 2.34)
+Suggests: make-doc
+Conflicts: make-guile
+Replaces: make-guile
+Homepage: https://www.gnu.org/software/make/
+Task: ubuntustudio-video, ubuntu-mate-core, ubuntu-mate-desktop
+Download-Size: 180 kB
+APT-Manual-Installed: no
+APT-Sources: http://archive.ubuntu.com/ubuntu jammy/main amd64 Packages
+Description: コンパイルを制御するユーティリティ
+ GNU Make は、プログラムのソースファイルからプログラムの実行ファイルやその他の
+ 対象ファイルを生成する作業を制御するユーティリティです。大きなプログラムの どの部分を (再) 生成すべきかを自動判定し、その (再)
+ 生成に必要なコマンドを 発行します。Make は入力ファイルに基づいて、対応する入力の更新に応じて対象 (ファイル)
+ を更新する必要があるどんなタスクに対しても利用できます --- コンピュータプログラムのビルドに限りません。まさに、Make は汎用目的の
+ 依存関係解決ユーティリティなのです。
+
